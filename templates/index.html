@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Data Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Excel Data Converter</h1>
+            <p>Convert your Excel data from horizontal to vertical format</p>
+        </header>
+        <div class="upload-section">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="messages">
+                        {% for message in messages %}
+                            <div class="alert">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+                <div class="file-input-container">
+                    <input type="file" name="file" accept=".xlsx,.xls" required>
+                    <button type="submit">Convert & Download</button>
+                </div>
+            </form>
+        </div>
+        <div class="info-section">
+            <h2>How it works:</h2>
+            <ol>
+                <li>Upload your Excel file (.xlsx or .xls)</li>
+                <li>The system will convert horizontal data to vertical format</li>
+                <li>Download the converted file automatically</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
