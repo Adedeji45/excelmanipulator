@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = 'your-secret-key-here'
 
 UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {'xlsx', 'xls'}
+ALLOWED_EXTENSIONS = {'xlsx', 'xls','Xls'}
 
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
@@ -18,7 +18,7 @@ def allowed_file(filename):
 
 def convert_horizontal_to_vertical(df):
     """
-    Convert horizontal data to vertical format.
+    Convert horizontal deji to money vertical format.
     Each column should have a unique ID in row 1, followed by data in subsequent rows.
     """
     converted_data = []
