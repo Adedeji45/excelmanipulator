@@ -1,45 +1,20 @@
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
-import requests
-r = requests.get("https://api.github.com")
-data = r.json()
-print(data["current_user_url"])
-print("Status:", r.status_code)
+numbers = [1, 2, 3, 4, 5]
+squares = [n**2 for n in numbers]
+for s in squares:
+    print(s)
+print(sum(squares))
+numbers = [1, 2, 3, 4, 5]
+squares = [n**2 for n in numbers]
+for s in squares:
+    print(s)
+print(sum(squares))
+numbers = [1, 2, 3, 4, 5]
+squares = [n**2 for n in numbers]
+for s in squares:
+    print(s)
+print(sum(squares))
+numbers = [1, 2, 3, 4, 5]
+squares = [n**2 for n in numbers]
+for s in squares:
+    print(s)
+print(sum(squares))
